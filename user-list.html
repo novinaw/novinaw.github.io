@@ -38,7 +38,7 @@
                 <td>Free Run Eggs - 12x</td>
                 <td>1</td>
                 <td>Dairy</td>
-                <td>Aisle 0, Section J</td>
+                <td><a href=""></a>Aisle 4, Section E</a></td>
                 </tr>
            
           <tr>
@@ -46,7 +46,7 @@
                 <td>Lindt Excellent Roasted Almond</td>
                 <td>2</td>
                 <td>Chocolate</td>
-                <td>Aisle 4, Section E</td>
+                <td><a href=""></a>Aisle 4, Section E</a></td>
           </tr>
           <tr>
                 <th scope="row">384994</th>
@@ -60,14 +60,14 @@
                 <td>Cheese Havati Smoke</td>
                 <td>1</td>
                 <td>Dairy</td>
-                <td>Aisle 2, Section F</td>
+                <td><a href=""></a>Aisle 4, Section E</a></td>
           </tr>
           <tr>
                 <th scope="row">593948</th>
                 <td>Classico Sauce Tomato and Basil</td>
                 <td>1</td>
                 <td>Pasta & Sauce</td>
-                <td>Aisle 7, Section J</td>
+                <td><a href=""></a>Aisle 4, Section E</a></td>
           </tr>
         </tbody>
       </table>
@@ -97,8 +97,8 @@
             </button>
           </div>
           <div class="modal-body">
-            <input type="file" accept="image/*" capture="camera" onchange="readURL(this);" />
-            <img id="blah" src="#" alt="your image" style="display:none;" />
+              <input type="file" accept="image/*" capture="camera" />
+           
           </div>
         </div>
     </div>
@@ -109,20 +109,5 @@
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
-    <script>
-      function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                $('#blah')
-                    .attr('src', e.target.result)
-                    .width(350)
-                    .height(350);
-            };
-            reader.readAsDataURL(input.files[0]);
-            document.getElementById('blah').style.display = 'inline';
-        }
-    }
-    </script>
   </body>
 </html>
